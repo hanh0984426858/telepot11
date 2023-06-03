@@ -2,8 +2,8 @@ import cv2
 face_cascade=cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 class VideoCamera(object):
     def __init__(self):
-        # self.video=cv2.VideoCapture("rtsp://admin:admin1234@192.168.1.15:554/cam/realmonitor?channel=1&subtype=0")
-        self.video=cv2.VideoCapture("rtsp://admin:admin1234@4J00895PBQ1D00B:37777/cam/realmonitor?channel=1&subtype=0")
+        self.video=cv2.VideoCapture("rtsp://admin:admin1234@192.168.1.15:554/cam/realmonitor?channel=1&subtype=0")
+        # self.video=cv2.VideoCapture("rtsp://admin:admin1234@4J00895PBQ1D00B:37777/cam/realmonitor?channel=1&subtype=0")
     def __del__(self):
         self.video.release()
     def get_frame(self):
